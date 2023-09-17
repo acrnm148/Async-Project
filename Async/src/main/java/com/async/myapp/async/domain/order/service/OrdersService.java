@@ -1,0 +1,29 @@
+package com.async.myapp.async.domain.order.service;
+
+import com.async.myapp.async.domain.order.Orders;
+import com.async.myapp.async.domain.order.repository.OrdersRepository;
+import com.async.myapp.async.domain.order.service.listener.model.OrdersEvent;
+import com.async.myapp.async.web.controller.order.requestDto.OrdersForm;
+import lombok.RequiredArgsConstructor;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class OrdersService {
+
+    private final ApplicationEventPublisher publisher;
+    private final OrdersRepository ordersRepository;
+
+    public void createOrders(OrdersForm ordersForm) {
+        // 주문 내역 저장
+        Orders createdOrders = Orders.createOrders(ordersForm.userEmail, ordersForm.productName, ordersForm.price, ordersForm.count);
+        ordersRepository.save(createdOrders);
+
+        // 이벤트 발생
+        publisher.publishEvent(OrdersEvent.builder()
+                        .userEmail(createdOrders.getUserEmail())
+                        .productName(createdOrders.getProductName())
+                        .build());
+    }
+}
