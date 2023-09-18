@@ -20,7 +20,7 @@
 <br/><br/>
 <br/><br/>
 
-### 2️⃣ AsyncConfig
+### 2️⃣ AsyncConfig - @Async 어노테이션 커스텀
 
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/b970c830-6acd-425b-bc95-711404e7c3d3)
 
