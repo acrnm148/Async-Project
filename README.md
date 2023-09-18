@@ -11,11 +11,14 @@
 
 ## 📌과정
 ### 1️⃣ Spring Event 사용 + 비동기
+![image](https://github.com/acrnm148/Async-Project/assets/67724306/fdf1dc43-5107-4a2b-8ec4-f5504ed3919a)
+![image](https://github.com/acrnm148/Async-Project/assets/67724306/c2c72a20-aa10-4f5e-bfcb-5114ed86337f)
 
 
 
 
 ### 2️⃣ AsyncConfig
+![image](https://github.com/acrnm148/Async-Project/assets/67724306/b970c830-6acd-425b-bc95-711404e7c3d3)
 
 
 
