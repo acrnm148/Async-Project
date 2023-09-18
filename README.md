@@ -15,8 +15,8 @@
 <!--![image](https://github.com/acrnm148/Async-Project/assets/67724306/c2c72a20-aa10-4f5e-bfcb-5114ed86337f)-->
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/bb1f92fc-9495-4eee-acb1-e79552d41e68)
 
-- 설정한 corePoolSize에 맞게 쓰레드 5개가 동시에 요청을 처리한다.
-
+- corePoolSize를 5개로 설정하여 쓰레드 5개가 동시에 요청을 처리한다.
+<br/><br/>
 
 ### 2️⃣ AsyncConfig
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/b970c830-6acd-425b-bc95-711404e7c3d3)
@@ -26,7 +26,7 @@
 - corePoolSize가 다 찼을 때 요청이 큐에 쌓이고, maxPoolSize가 다 찼을 때 요청이 큐에 쌓일 때 큐에 넣을 수 있는 요청의 개수 queueCapacity
 - 요청을 처리하기 위한 쓰레드가 쓰레드풀에 들어가지 못해 발생하는 RejectedExecutorException 발생 시 처리되는 작업을 설정하였다.
    -> new ThreadExecutor.CallerRunsPolicy() 로 쓰레드풀이 다 찼을 경우 요청을 받은 쓰레드에서 동기로 처리하도록 설정해주었다.
-
+<br/><br/>
 
 
 ### 3️⃣ WebFlux
