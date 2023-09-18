@@ -9,7 +9,7 @@
 - WebFlux
 - Kafka(예정)
 
-<br/><br/>
+<br/>
 
 ## 📌과정
 ### 1️⃣ Spring Event 사용 + 비동기
@@ -19,8 +19,8 @@
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/bb1f92fc-9495-4eee-acb1-e79552d41e68)
 
 - corePoolSize를 5개로 설정하여 쓰레드 5개가 동시에 요청을 처리한다.
-<br/><br/>
-<br/><br/>
+
+<br/><br/><br/>
 
 ### 2️⃣ AsyncConfig - @Async 어노테이션 커스텀
 
@@ -32,26 +32,25 @@
 - 요청을 처리하기 위한 쓰레드가 쓰레드풀에 들어가지 못해 발생하는 RejectedExecutorException 발생 시 처리되는 작업을 설정하였다.
    -> new ThreadExecutor.CallerRunsPolicy() 로 쓰레드풀이 다 찼을 경우 요청을 받은 쓰레드에서 동기로 처리하도록 설정해주었다.
 
-<br/><br/>
-<br/><br/>
+<br/><br/><br/>
 
 ### 3️⃣ WebFlux
 
 
-<br/><br/>
-<br/><br/>
+
+<br/><br/><br/>
 
 ### 4️⃣ Kafka
 
 
-<br/><br/>
-<br/><br/>
+
+<br/><br/><br/>
 
 ## 📌느낀점
 
-<br/><br/>
-<br/><br/>
+
+<br/><br/><br/>
 
 ## 📓 개발과정 : [블로그 - 비동기](https://k-ang.tistory.com/category/Web/%EB%B9%84%EB%8F%99%EA%B8%B0)
 
-<br/><br/>
+<br/>
