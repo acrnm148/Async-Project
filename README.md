@@ -14,11 +14,13 @@
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/fdf1dc43-5107-4a2b-8ec4-f5504ed3919a)
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/c2c72a20-aa10-4f5e-bfcb-5114ed86337f)
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/bb1f92fc-9495-4eee-acb1-e79552d41e68)
+
 - 설정한 corePoolSize에 맞게 쓰레드 5개가 동시에 요청을 처리한다.
 
 
 ### 2️⃣ AsyncConfig
 ![image](https://github.com/acrnm148/Async-Project/assets/67724306/b970c830-6acd-425b-bc95-711404e7c3d3)
+
 - 동시에 동작하는 쓰레드 개수 corePoolSize
 - corePoolSize가 다 찼을 때 동시에 동작하는 최대 쓰레드 개수 maxPoolSize
 - corePoolSize가 다 찼을 때 요청이 큐에 쌓이고, maxPoolSize가 다 찼을 때 요청이 큐에 쌓일 때 큐에 넣을 수 있는 요청의 개수 queueCapacity
