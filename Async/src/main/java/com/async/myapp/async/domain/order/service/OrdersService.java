@@ -25,13 +25,9 @@ public class OrdersService {
         ordersRepository.save(createdOrders);
 
         // 이벤트 발생
-        try {
-            publisher.publishEvent(OrdersEvent.builder()
-                    .userEmail(createdOrders.getUserEmail())
-                    .productName(createdOrders.getProductName())
-                    .build());
-        } catch(RejectedExecutionException e) {
-            throw new NoMoreThread("쓰레드풀이 다찼음");
-        }
+        publisher.publishEvent(OrdersEvent.builder()
+                .userEmail(createdOrders.getUserEmail())
+                .productName(createdOrders.getProductName())
+                .build());
     }
 }
