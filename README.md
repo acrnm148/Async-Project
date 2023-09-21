@@ -1,5 +1,5 @@
 # Async-Project
-비동기 적용기 : Async ▶ WebFlux ▶ KAFKA
+비동기 적용기 : Async ▶ WebFlux
 
 ## 📌사용 기술
 - Java 17
@@ -7,7 +7,7 @@
 - QueryDSL
 - MySQL
 - WebFlux
-- Kafka(예정)
+- Kafka(to be)
 
 <br/>
 
